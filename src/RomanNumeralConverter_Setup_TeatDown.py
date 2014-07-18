@@ -44,7 +44,7 @@ class RomanNumberalConverterTest(unittest.TestCase):
 		self.assertEquals(1, self.cvt.convert_to_decimal("I"))
 
  	def test_empty_roman_numeral(self):
- 		self.assertFalse(self.cvt.convert_to_decimal("") == 0)
+ 		self.assertTrue(self.cvt.convert_to_decimal("") == 0)
  		self.assertFalse(self.cvt.convert_to_decimal("") > 0)
 
 	def test_no_roman_numeral(self):
