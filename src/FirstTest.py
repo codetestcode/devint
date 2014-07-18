@@ -8,9 +8,6 @@ class is_Odd_Tests(unittest.TestCase):
 	def testOne(self):
 		self.failUnless(is_odd(1))
 
-	def testTwo(self):
-		self.failIf(is_odd(2))
-
 def main():
 	unittest.main()
 
